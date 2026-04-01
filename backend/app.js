@@ -14,7 +14,7 @@ const adminRoutes = require('./routes/adminRoutes');
 const bookingRoutes = require('./routes/bookingRoutes');
 const paymentRoutes = require('./routes/paymentRoutes');
 
-app.use(cors());
+app.use(cors({ origin: 'https://hotel-app-frontend-fax4.onrender.com'}));
 app.use(express.json());
 
 // Serve uploaded images statically
